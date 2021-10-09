@@ -1,0 +1,21 @@
+.pricing-main{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    margin-left: 125px;
+    margin-right: 125px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+@media screen and (min-width:0px) and (max-width:770px){
+    .pricing-main{
+        margin: 0px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
