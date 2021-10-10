@@ -1,4 +1,4 @@
-.pricing-main{
+.pricing-main {
     display: flex;
     justify-content: space-between;
     margin: 50px;
@@ -8,8 +8,9 @@
     row-gap: 20px;
     column-gap: 10px;
 }
-@media screen and (min-width:0px) and (max-width:770px){
-    .pricing-main{
+
+@media screen and (min-width:0px) and (max-width:770px) {
+    .pricing-main {
         margin: 0px;
         margin-top: 50px;
         margin-bottom: 15px;
@@ -19,41 +20,48 @@
         align-items: center;
     }
 }
-.faq{
+
+.faq {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.faq-top{
+
+.faq-top {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
-.faqt-div{
+
+.faqt-div {
     width: 50%;
     display: flex;
     justify-content: flex-start;
     padding-bottom: 20px;
     border-bottom: 1px solid #5f6061b2;
 }
-.faq{
+
+.faq {
     background-color: rgb(255, 255, 255);
 }
+
 @media screen and (min-width:0px) and (max-width: 600px) {
-    .faq-top{
+    .faq-top {
         display: flex;
         flex-direction: column;
         width: 85%;
     }
-    .faqt-div{
+
+    .faqt-div {
         width: 85%;
     }
 }
+
 @media screen and (min-width:0px) and (max-width: 674px) {
-    .faqt{
+    .faqt {
         font-size: 18px;
     }
 }

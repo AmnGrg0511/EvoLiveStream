@@ -1,12 +1,14 @@
-.faq-main{
+.faq-main {
     display: block;
 }
-.question{
+
+.question {
     padding: 24px 0px;
     display: flex;
     justify-content: space-between;
 }
-.question-sub{
+
+.question-sub {
     color: rgb(33, 33, 33);
     font-family: 'Inter', sans-serif;
     display: block;
@@ -17,28 +19,32 @@
     align-self: center;
     margin: 0px 0px 24px;
 }
-.faq-dd{
+
+.faq-dd {
     margin-left: 1.5rem;
     align-self: center;
     display: block;
     transform: rotate(0deg);
     transition: transform 0.25s linear 0s;
 }
-.faq-dd2{
+
+.faq-dd2 {
     margin-left: 1.5rem;
     align-self: center;
     display: block;
     transform: rotate(-180deg);
     transition: transform 0.25s linear 0s;
 }
-.dropdown-ic{
+
+.dropdown-ic {
     height: 25px;
     width: auto;
     vertical-align: middle;
     overflow: hidden;
     cursor: pointer;
 }
-.answer{
+
+.answer {
     display: block;
     height: inherit;
     overflow: hidden;
@@ -50,7 +56,8 @@
     font-family: 'Inter', sans-serif;
     display: none;
 }
-.answer2{
+
+.answer2 {
     display: block;
     height: inherit;
     overflow: hidden;

@@ -1,16 +1,18 @@
-.pricecard-main{
+.pricecard-main {
     display: flex;
     flex-direction: column;
     width: 23%;
-    border:2px solid rgb(230, 230, 230);
+    border: 2px solid rgb(230, 230, 230);
     height: 600px;
     justify-content: space-between;
 }
-.pricecard-main:hover{
+
+.pricecard-main:hover {
     transform: translateY(-7px);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.priceimg{
+
+.priceimg {
     width: 75px;
     height: 75px;
     margin-top: 40px;
@@ -18,28 +20,33 @@
     left: -3px;
     top: -2px;
 }
-.pricecard-img{
+
+.pricecard-img {
     display: flex;
     justify-content: center;
 }
-.pricecard-header{
+
+.pricecard-header {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
     margin-top: 20px;
 }
-.free{
+
+.free {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
     letter-spacing: 2px;
 }
-.price-free{
+
+.price-free {
     display: flex;
     justify-content: center;
     width: 75px;
     height: 75px;
 }
-.cost{
+
+.cost {
     display: flex;
     justify-content: center;
     margin-left: 15px;
@@ -48,16 +55,18 @@
 .duration::before {
     content: '/';
     margin-right: 2px;
-  }
-  
+}
+
 .value {
     font-size: 3rem;
     font-weight: 300;
 }
+
 .currency,
 .duration {
-  color: #1bbc9d;
+    color: #1bbc9d;
 }
+
 .currency {
     display: inline-block;
     vertical-align: top;
@@ -66,7 +75,8 @@
     align-self: flex-start;
     margin-right: 3px;
     margin-top: 5px;
-} 
+}
+
 .duration {
     align-self: flex-end;
     font-size: 1rem;
@@ -74,7 +84,8 @@
     text-transform: uppercase;
     font-weight: 400;
 }
-.pricecard-button{
+
+.pricecard-button {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 0.8rem;
@@ -88,32 +99,36 @@
     color: #1bbc9d;
     cursor: pointer;
 }
-.pricecard-button:hover{
+
+.pricecard-button:hover {
     background-color: #1bbc9d;
     color: white;
 }
-.button-main{
+
+.button-main {
     display: flex;
     justify-content: center;
     justify-self: flex-end;
     margin-bottom: 30px;
 }
-@media screen and (min-width:770px) and (max-width:1200px){
-    .pricecard-main{
+
+@media screen and (min-width:770px) and (max-width:1200px) {
+    .pricecard-main {
         display: flex;
         flex-direction: column;
         width: 48%;
-        border:2px solid rgb(230, 230, 230);
+        border: 2px solid rgb(230, 230, 230);
         height: 600px;
         justify-content: space-between;
     }
 }
-@media screen and (min-width:0px) and (max-width:770px){
-    .pricecard-main{
+
+@media screen and (min-width:0px) and (max-width:770px) {
+    .pricecard-main {
         display: flex;
         flex-direction: column;
         width: 95%;
-        border:2px solid rgb(230, 230, 230);
+        border: 2px solid rgb(230, 230, 230);
         height: 600px;
         justify-content: space-between;
     }
