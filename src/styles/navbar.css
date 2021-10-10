@@ -98,9 +98,12 @@ body{
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
+    border-radius: 3px;
+    transition: background-color .4s linear;
 }
 .navbutton:hover{
     transform: scale(1.1);
+    background-color: rgba(229, 238, 245, 0.8);
 }
 .ham {
     cursor: pointer;
@@ -180,7 +183,7 @@ body{
 .nav3-linkmain{
     display: none;
 }
-@media screen and (min-width:700px) and (max-width:1250px) {
+@media screen and (min-width:701px) and (max-width:1250px) {
     .nav3-main{
         display: none;
     }
@@ -196,7 +199,7 @@ body{
         display: none;
     }
 }
-@media screen and (min-width:300px) and (max-width:699px) {
+@media screen and (min-width:300px) and (max-width:700px) {
     .nav3-main{
         display: flex;
        justify-content: space-between;

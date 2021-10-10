@@ -2,9 +2,9 @@ import './../styles/pricecard.css'
 function Pricecard(props){
     const pricemy=()=>{
         if(props.mory=="monthly")
-        return <span class="value">30</span>
+        return <span className="value">30</span>
         else
-        return <span class="value">20</span>
+        return <span className="value">20</span>
     }
     return(
         <>
@@ -21,11 +21,11 @@ function Pricecard(props){
                </div>
                </div>
                <div className="cost">
-                  <span class="currency">$</span>
+                  <span className="currency">$</span>
                   {
                    pricemy()
                   }
-                  <span class="duration">mo</span>
+                  <span className="duration">mo</span>
                </div>
                </div>
                <div>

@@ -53,7 +53,7 @@ function Navbar(){
                 <div className="nav-cmain">
                 <div className="nav-c">
                 <div className="logo">
-                 <img src="./images/logo2.jpg" className="image"></img>
+                 <Link to="/"><img src="./images/logo2.jpg" className="image"></img></Link>
                 </div>
                     <Link to="" className="navlink">Why Evo ?  <IconContext.Provider value={{className:"dropdown"}}>
                     <RiArrowDropDownLine />
