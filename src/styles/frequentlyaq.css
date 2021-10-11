@@ -3,7 +3,7 @@
 }
 
 .question {
-    padding: 24px 0px;
+    padding: 20px 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -24,16 +24,12 @@
     margin-left: 1.5rem;
     align-self: center;
     display: block;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     transition: transform 0.25s linear 0s;
 }
 
-.faq-dd2 {
-    margin-left: 1.5rem;
-    align-self: center;
-    display: block;
-    transform: rotate(-180deg);
-    transition: transform 0.25s linear 0s;
+.faq-hide {
+    transform: rotate(0);
 }
 
 .dropdown-ic {
@@ -46,25 +42,16 @@
 
 .answer {
     display: block;
-    height: inherit;
-    overflow: hidden;
+    height: fit-content;
     color: rgb(33, 33, 33);
     font-size: 16px;
     font-weight: 400;
     letter-spacing: -0.16px;
     line-height: 1.5;
     font-family: 'Inter', sans-serif;
-    display: none;
+    transition: all linear .2s;
 }
 
-.answer2 {
-    display: block;
-    height: inherit;
-    overflow: hidden;
-    color: rgb(33, 33, 33);
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: -0.16px;
-    line-height: 1.5;
-    font-family: 'Inter', sans-serif;
+.hide {
+    font-size: 0;
 }
