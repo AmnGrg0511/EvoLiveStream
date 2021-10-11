@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import "./../styles/home.css";
 import { Feature } from "./feature";
 import { greatFeatures, features } from "../data/features.json";
+import steps from "../data/steps.json";
+import How from "./how";
 
 function Home() {
   const { media, heading, points } = greatFeatures;
@@ -44,6 +46,16 @@ function Home() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="how">
+        <div className="how-sub">
+          {steps.map((step) => (
+            <How {...step} />
+          ))}
+        </div>
+        <Link to="">
+          <button className="how-b">GET STARTED</button>
+        </Link>
       </div>
       {features.map((feature, i) => (
         <Feature key={i} index={i} {...feature} />

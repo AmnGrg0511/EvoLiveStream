@@ -1,4 +1,4 @@
-.footersub-main{
+.footersub-main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -6,15 +6,18 @@
     padding-left: 15px;
     margin-right: 20px;
 }
-ul{
+
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-li{
+
+li {
     margin-bottom: 10px;
 }
-.footerlink{
+
+.footerlink {
     color: #797979;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
@@ -22,7 +25,8 @@ li{
     font-weight: 400;
     line-height: 1.667;
 }
-.fsh{
+
+.fsh {
     font-family: "Rajdhani", sans-serif;
     color: #fff;
     font-size: 22px;

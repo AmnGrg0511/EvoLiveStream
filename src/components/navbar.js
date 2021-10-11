@@ -51,7 +51,9 @@ function Navbar() {
         <div className="nav-cmain">
           <div className="nav-c">
             <div className="logo">
-              <img src="./images/logo2.jpg" className="image" alt="" />
+              <Link to="/">
+                <img src="./images/logo2.jpg" className="image" alt="" />
+              </Link>
             </div>
             <Link to="" className="navlink">
               Why Evo ?{" "}
