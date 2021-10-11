@@ -1,107 +1,131 @@
-body{
+body {
     margin: 0px
 }
-.nav-main{
+
+.nav-main {
     width: 100%;
     height: 60px;
     display: flex;
     align-items: center;
     position: sticky;
-    top: -1px;
+    top: 0px;
     z-index: 100;
     background-color: white;
 }
-.dropdown{
+
+.dropdown {
     align-self: flex-end;
+    padding: 3px;
 }
-.logo{
+
+.logo {
     margin-right: 15px;
 }
-.nav-cmain{
+
+.nav-cmain {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-.nav-c{
+
+.nav-c {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.navlink{
+
+.navlink {
     text-decoration: none;
     color: rgb(45, 61, 79);
     font-size: 16px;
     margin-left: 20px;
-    margin-right: 20px ;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     align-content: center;
     cursor: pointer;
 }
-.navlink:hover{
-    color: rgba(216, 216, 216, 0.8);
+
+.navlink:hover {
+    color: rgb(150, 150, 150);
 }
-.image{
+
+.image {
     width: 45px;
     height: 45px;
     margin-left: 50px;
 }
-.nav-c2{
+
+.nav-c2 {
     display: flex;
     align-items: center;
 }
-.searchicon{
+
+.searchicon {
     align-self: center;
     margin-left: 10px;
     margin-right: 10px;
 }
-.searchin{
+
+.searchin {
     padding: 9px;
-    border-radius:20px;
+    border-radius: 20px;
     padding-left: 14px;
     border: 0px;
-    background-color: rgba(240,244,247,0.8);
+    background-color: rgba(240, 244, 247, 0.8);
     display: none;
     animation: searchdis .7s linear forwards;
     position: relative;
     right: 30px;
 }
-.searchin:focus{
+
+.searchin:focus {
     outline: none;
 }
-.searchin2{
+
+.searchin2 {
     display: initial;
     position: relative;
 }
+
 @keyframes searchdis {
-    50%{
+    50% {
         right: 15px;
     }
-    100%{
+
+    100% {
         right: 0px;
     }
 }
-.searchicon-main{
+
+.searchicon-main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.search{
+
+.search {
     display: flex;
 }
-.navbutton{
+
+.navbutton {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: rgba(240,244,247,0.8);
-    border:0px;
+    background-color: rgba(240, 244, 247, 0.8);
+    border: 0px;
     margin-left: 10px;
     margin-right: 10px;
     cursor: pointer;
+    border-radius: 3px;
+    transition: background-color .4s linear;
 }
-.navbutton:hover{
+
+.navbutton:hover {
     transform: scale(1.1);
+    background-color: rgba(229, 238, 245, 0.8);
 }
+
 .ham {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -111,33 +135,41 @@ body{
     -ms-user-select: none;
     user-select: none;
     width: 40px;
-  }
-  .hamRotate.active {
+}
+
+.hamRotate.active {
     transform: rotate(45deg);
-  }
-  .hamRotate180.active {
+}
+
+.hamRotate180.active {
     transform: rotate(180deg);
-  }
-  .line {
-    fill:none;
+}
+
+.line {
+    fill: none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-    stroke:#000;
-    stroke-width:5.5;
-    stroke-linecap:round;
-  }
-  .ham1 .top {
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+.ham1 .top {
     stroke-dasharray: 40 139;
-  }
-  .ham1 .bottom {
+}
+
+.ham1 .bottom {
     stroke-dasharray: 40 180;
-  }
-  .ham1.active .top {
+}
+
+.ham1.active .top {
     stroke-dashoffset: -98px;
-  }
-  .ham1.active .bottom {
+}
+
+.ham1.active .bottom {
     stroke-dashoffset: -138px;
-  }
-.nav2-main{
+}
+
+.nav2-main {
     /* display: flex;
     justify-content: space-between;
     align-items: center;
@@ -146,73 +178,85 @@ body{
     box-shadow: 0 4px 2px -2px rgba(175, 174, 174, 0.1); */
     display: none;
 }
-.navbar2-navlink{
+
+.navbar2-navlink {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.navlink2{
+
+.navlink2 {
     text-decoration: none;
     color: black;
     font-size: 16px;
     margin-left: 20px;
-    margin-right: 20px ;
+    margin-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     cursor: pointer;
     text-align: left;
 }
-.nav2dd{
+
+.nav2dd {
     display: flex;
     justify-content: space-between;
 
 }
-.dropdown2{
+
+.dropdown2 {
     align-self: center;
     margin-right: 10px;
 }
-.nav2-linkmain{
+
+.nav2-linkmain {
     display: none;
 }
-.nav3-main{
+
+.nav3-main {
     display: none;
 }
-.nav3-linkmain{
+
+.nav3-linkmain {
     display: none;
 }
-@media screen and (min-width:700px) and (max-width:1250px) {
-    .nav3-main{
+
+@media screen and (min-width:701px) and (max-width:1250px) {
+    .nav3-main {
         display: none;
     }
-    .nav2-main{
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       width: 100%;
-       height: 60px;
-       box-shadow: 0 4px 2px -2px rgba(175, 174, 174, 0.1);
-    }   
-    .nav-main{
-        display: none;
-    }
-}
-@media screen and (min-width:300px) and (max-width:699px) {
-    .nav3-main{
+
+    .nav2-main {
         display: flex;
-       justify-content: space-between;
-       align-items: center;
-       width: 100%;
-       height: 60px;
-       box-shadow: 0 4px 2px -2px rgba(175, 174, 174, 0.1);
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        box-shadow: 0 4px 2px -2px rgba(175, 174, 174, 0.1);
     }
-    
-    .nav-main{
+
+    .nav-main {
         display: none;
     }
-    .search{
-    margin-left: 10px;
-    margin-right: 20px ;
-    padding-top: 20px;
-    padding-bottom: 20px;
+}
+
+@media screen and (min-width:300px) and (max-width:700px) {
+    .nav3-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        box-shadow: 0 4px 2px -2px rgba(175, 174, 174, 0.1);
+    }
+
+    .nav-main {
+        display: none;
+    }
+
+    .search {
+        margin-left: 10px;
+        margin-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }

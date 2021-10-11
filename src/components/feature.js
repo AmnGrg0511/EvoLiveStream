@@ -3,6 +3,7 @@ const styles = {
     margin: 100,
     display: "flex",
     justifyContent: "center",
+    flexWrap: "wrap",
   },
   media: { width: 500, textAlign: "center", margin: 25 },
   heading: {
