@@ -331,7 +331,7 @@
 
 .how-b {
     padding: 15px;
-    background-color: #9fcbec;
+    background-color: #6daaca;
     border: 0px;
     padding-left: 50px;
     padding-right: 50px;
@@ -342,11 +342,11 @@
     letter-spacing: 1px;
     font-size: 15px;
     cursor: pointer;
-    transition: background-color .4s linear;
+    transition: background-color .1s linear;
 }
 
 .how-b:hover {
-    background-color: #81b0d4;
+    background-color: #51aac4;
 }
 
 @media screen and (min-width: 0px) and (max-width: 899px) {

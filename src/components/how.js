@@ -1,13 +1,13 @@
-import './../styles/how.css'
-function How(props) {
+import "./../styles/how.css";
+function How({ imgurl, heading, content }) {
   return (
     <>
       <div className="H-main">
-        <img src={props.imgurl} className="H-img"></img>
-        <h3 className="H-heading">{props.heading}</h3>
-        <p className="H-content">{props.content}</p>
+        <img src={imgurl} className="H-img" alt="" />
+        <h3 className="H-heading">{heading}</h3>
+        <p className="H-content">{content}</p>
       </div>
     </>
-  )
+  );
 }
 export default How;
