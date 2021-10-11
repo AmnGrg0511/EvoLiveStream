@@ -4,6 +4,9 @@ import { IconContext } from 'react-icons/lib'
 import { RiArrowDropDownLine } from 'react-icons/ri'
 import { IoSearchOutline } from 'react-icons/io5'
 import { useState } from 'react';
+import navdata from './../data/navbar/navlink.json'
+import navdatabutton from './../data/navbar/navlinkbutton.json'
+import navlink2data from './../data/navbar/navlink2.json' 
 function Navbar() {
     const [hb, shb] = useState("No");
     const [hb2, shb2] = useState("No");
@@ -49,23 +52,20 @@ function Navbar() {
     }
     return (
         <>
+           {console.log(navdata)}
             <div className="nav-main">
                 <div className="nav-cmain">
                     <div className="nav-c">
                         <div className="logo">
                             <Link to="/"><img src="./images/logo2.jpg" className="image"></img></Link>
                         </div>
-                        <Link to="" className="navlink">Why Evo ?  <IconContext.Provider value={{ className: "dropdown" }}>
-                            <RiArrowDropDownLine />
-                        </IconContext.Provider></Link>
-                        <Link to="" className="navlink">Features<IconContext.Provider value={{ className: "dropdown" }}>
-                            <RiArrowDropDownLine />
-                        </IconContext.Provider></Link>
-                        <Link to="" className="navlink">Resources<IconContext.Provider value={{ className: "dropdown" }}>
-                            <RiArrowDropDownLine />
-                        </IconContext.Provider></Link>
-                        <Link to="" className="navlink">Watch</Link>
-                        <Link to="/pricing" className="navlink">Pricing</Link>
+                        {
+                            navdata.map(element=>{
+                                return <Link to={element.to} className="navlink">{element.content}<IconContext.Provider value={{ className: "dropdown" }}>
+                                <RiArrowDropDownLine />
+                                </IconContext.Provider></Link>
+                            })
+                        }
                     </div>
                     <div className="nav-c2">
                         <div className="search">
@@ -76,9 +76,11 @@ function Navbar() {
                                 </IconContext.Provider>
                             </form>
                         </div>
-                        <Link to=""><button className="navbutton">Log in</button></Link>
-                        <Link to=""><button className="navbutton">Join</button></Link>
-                        <Link to=""><button className="navbutton">New video</button></Link>
+                        {
+                            navdatabutton.map(element=>{
+                                return <Link to={element.to}><button className="navbutton">{element.content}</button></Link>
+                            })
+                        }
                     </div>
                 </div>
             </div>
@@ -97,31 +99,25 @@ function Navbar() {
                             </IconContext.Provider>
                         </form>
                     </div>
-                    <Link to=""><button className="navbutton">Log in</button></Link>
-                    <Link to=""><button className="navbutton">Join</button></Link>
-                    <Link to=""><button className="navbutton">New video</button></Link>
+                    {
+                            navdatabutton.map(element=>{
+                                return <Link to={element.to}><button className="navbutton">{element.content}</button></Link>
+                            })
+                        }
                 </div>
             </div>
             <div className="nav2-linkmain">
                 <div className="navbar2-navlink">
-                    <div className="nav2dd">
-                        <Link to="" className="navlink2">Why Evo ?</Link>
-                        <IconContext.Provider value={{ className: "dropdown2" }}>
-                            <RiArrowDropDownLine />
-                        </IconContext.Provider>
-                    </div>
-                    <div className="nav2dd">
-                        <Link to="" className="navlink2">Features</Link>
-                        <IconContext.Provider value={{ className: "dropdown2" }}>
-                            <RiArrowDropDownLine />
-                        </IconContext.Provider>
-                    </div>
-                    <div className="nav2dd">
-                        <Link to="" className="navlink2">Resources</Link>
-                        <IconContext.Provider value={{ className: "dropdown2" }}>
-                            <RiArrowDropDownLine />
-                        </IconContext.Provider>
-                    </div>
+                    {
+                        navlink2data.map(element=>{
+                            return <div className="nav2dd">
+                            <Link to={element.to} className="navlink2">{element.content}</Link>
+                            <IconContext.Provider value={{ className: "dropdown2" }}>
+                                <RiArrowDropDownLine />
+                            </IconContext.Provider>
+                        </div>
+                        })
+                    }
                     <Link to="" className="navlink2">Watch</Link>
                     <Link to="/pricing" className="navlink2">Pricing</Link>
                 </div>
@@ -140,24 +136,16 @@ function Navbar() {
                 <div className="navbar2-navlink">
                     <Link to="" className="navlink2">Log in</Link>
                     <Link to="" className="navlink2">Join</Link>
-                    <div className="nav2dd">
-                        <Link to="" className="navlink2">Why Evo ?</Link>
-                        <IconContext.Provider value={{ className: "dropdown2" }}>
-                            <RiArrowDropDownLine />
-                        </IconContext.Provider>
-                    </div>
-                    <div className="nav2dd">
-                        <Link to="" className="navlink2">Features</Link>
-                        <IconContext.Provider value={{ className: "dropdown2" }}>
-                            <RiArrowDropDownLine />
-                        </IconContext.Provider>
-                    </div>
-                    <div className="nav2dd">
-                        <Link to="" className="navlink2">Resources</Link>
-                        <IconContext.Provider value={{ className: "dropdown2" }}>
-                            <RiArrowDropDownLine />
-                        </IconContext.Provider>
-                    </div>
+                    {
+                        navlink2data.map(element=>{
+                            return <div className="nav2dd">
+                            <Link to={element.to} className="navlink2">{element.content}</Link>
+                            <IconContext.Provider value={{ className: "dropdown2" }}>
+                                <RiArrowDropDownLine />
+                            </IconContext.Provider>
+                        </div>
+                        })
+                    }
                     <Link to="" className="navlink2">Watch</Link>
                     <Link to="/pricing" className="navlink2">Pricing</Link>
                     <div className="search">
