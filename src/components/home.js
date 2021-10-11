@@ -2,6 +2,7 @@ import { ImDisplay } from 'react-icons/im';
 import { Link } from 'react-router-dom';
 import './../styles/home.css'
 import How from './how';
+import Partners from './partners';
 function Home() {
   return (
     <>
@@ -61,6 +62,11 @@ function Home() {
           <How imgurl="./images/sell.png" heading="Sell" content="Sell more with Live Shopping by providing in-video checkouts or redirect them to any external web/product page" />
         </div>
         <Link to=""><button className="how-b">GET STARTED</button></Link>
+      </div>
+      <div className="Technologypartners">
+      <h2 style={{textAlign:'center'}}>TECHNOLOGY PARTNERS</h2>
+      <Partners />
+      <Partners />
       </div>
     </>
   )

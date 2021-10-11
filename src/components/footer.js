@@ -1,8 +1,8 @@
 import './../styles/footer.css'
-import Footersub from './footersub.js';
+import Footersub from './footersub.js'
 import { Link } from 'react-router-dom'
 import { ImHeart } from 'react-icons/im'
-import { IconContext } from 'react-icons/lib';
+import { IconContext } from 'react-icons/lib'
 import { AiFillFacebook } from 'react-icons/ai'
 import { AiFillTwitterSquare } from 'react-icons/ai'
 import { AiFillDribbbleSquare } from 'react-icons/ai'

@@ -1,0 +1,13 @@
+.Partners-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Partners-sub {
+    border-radius: 20px;
+    background-color: #EFEFEF;
+    width: 75%;
+    min-height: 250px;
+    margin-top: 50px;
+}
