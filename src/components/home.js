@@ -1,6 +1,6 @@
-import { ImDisplay } from 'react-icons/im';
 import { Link } from 'react-router-dom';
 import './../styles/home.css'
+import Contactus from './contactus';
 import How from './how';
 import Partners from './partners';
 function Home() {
@@ -68,6 +68,7 @@ function Home() {
       <Partners />
       <Partners />
       </div>
+      <Contactus />
     </>
   )
 }
