@@ -64,9 +64,9 @@ function Home() {
         <Link to=""><button className="how-b">GET STARTED</button></Link>
       </div>
       <div className="Technologypartners">
-      <h2 style={{textAlign:'center'}}>TECHNOLOGY PARTNERS</h2>
-      <Partners />
-      <Partners />
+       <h2 style={{textAlign:'center'}}>TECHNOLOGY PARTNERS</h2>
+       <Partners heading="E-COMMERCE AND TECH STACK INTEGRATIONS"/>
+       <Partners heading="MARKETING AND CRM INTEGRATIONS"/>
       </div>
       <Contactus />
     </>
