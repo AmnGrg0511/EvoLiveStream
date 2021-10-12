@@ -8,13 +8,14 @@ body {
     display: flex;
     align-items: center;
     position: sticky;
-    top: -1px;
+    top: 0px;
     z-index: 100;
     background-color: white;
 }
 
 .dropdown {
     align-self: flex-end;
+    padding: 3px;
 }
 
 .logo {
@@ -46,7 +47,7 @@ body {
 }
 
 .navlink:hover {
-    color: rgba(216, 216, 216, 0.8);
+    color: rgb(150, 150, 150);
 }
 
 .image {

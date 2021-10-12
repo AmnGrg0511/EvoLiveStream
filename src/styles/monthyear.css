@@ -60,7 +60,7 @@ label {
   width: 90px;
   background-color: #2d3e50;
   border-radius: 50em;
-  -webkit-transition: -webkit-transform 0.5s linear;
-  -moz-transition: -moz-transform 0.5s linear;
-  transition: transform 0.5s linear;
+  -webkit-transition: -webkit-transform 0.4s linear;
+  -moz-transition: -moz-transform 0.4s linear;
+  transition: transform 0.4s linear;
 }
