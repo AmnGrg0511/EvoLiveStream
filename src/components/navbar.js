@@ -76,7 +76,7 @@ function Navbar() {
                 <RiArrowDropDownLine />
               </IconContext.Provider>
             </Link>
-            <Link to="" className="navlink">
+            <Link to="/startup" className="navlink">
               Watch
             </Link>
             <Link to="/pricing" className="navlink">
