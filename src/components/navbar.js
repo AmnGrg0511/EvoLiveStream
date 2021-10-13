@@ -1,9 +1,12 @@
 import "./../styles/navbar.css";
 import { Link } from "react-router-dom";
-import { IconContext } from "react-icons/lib";
-import { RiArrowDropDownLine } from "react-icons/ri";
-import { IoSearchOutline } from "react-icons/io5";
-import { useState } from "react";
+import { IconContext } from 'react-icons/lib'
+import { RiArrowDropDownLine } from 'react-icons/ri'
+import { IoSearchOutline } from 'react-icons/io5'
+import { useState } from 'react';
+import navdata from './../data/navbar/navlink.json'
+import navdatabutton from './../data/navbar/navlinkbutton.json'
+import navlink2data from './../data/navbar/navlink2.json' 
 function Navbar() {
   const [hb, shb] = useState("No");
   const [hb2, shb2] = useState("No");

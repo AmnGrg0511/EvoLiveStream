@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import Contactus from './contactus';
+import Partners from './partners';
 import "./../styles/home.css";
 import { Feature } from "./feature";
 import { greatFeatures, features } from "../data/features.json";
@@ -60,6 +62,12 @@ function Home() {
       {features.map((feature, i) => (
         <Feature key={i} index={i} {...feature} />
       ))}
+      <div className="Technologypartners">
+       <h2 style={{textAlign:'center'}}>TECHNOLOGY PARTNERS</h2>
+       <Partners heading="E-COMMERCE AND TECH STACK INTEGRATIONS"/>
+       <Partners heading="MARKETING AND CRM INTEGRATIONS"/>
+      </div>
+      <Contactus />
     </>
   );
 }
