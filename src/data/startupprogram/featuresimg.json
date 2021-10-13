@@ -1,0 +1,26 @@
+[
+    {
+        "imgurl": "./images/Ask-questions.png",
+        "heading": "Ask questions"
+    },
+    {
+        "imgurl":"./images/Send-voice-messages.png",
+        "heading": "Send voice messages"
+    },
+    {
+        "imgurl":"./images/Live-chat.png",
+        "heading":"Live chat"
+    },
+    {
+        "imgurl":"./images/Request-Product-Details.png",
+        "heading":"Request product details"
+    },
+    {
+        "imgurl":"./images/Request-a-video-call.png",
+        "heading":"Request a video call"
+    },
+    {
+        "imgurl":"./images/Do-Live-Video-Shopping.png",
+        "heading":"Do Live Video Shopping"
+    }
+]
