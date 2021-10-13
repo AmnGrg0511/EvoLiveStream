@@ -13,7 +13,7 @@ function Home() {
     <>
       <div className="video-main">
         <video
-          src="./images/Evointrovideo.mp4"
+          src="./images/Myvideo.mp4"
           className="video"
           autoPlay
           muted
