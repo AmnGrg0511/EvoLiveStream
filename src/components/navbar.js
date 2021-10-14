@@ -70,7 +70,7 @@ function Navbar() {
                 <RiArrowDropDownLine />
               </IconContext.Provider>
             </Link>
-            <Link to="" className="navlink">
+            <Link to="/oneToMany" className="navlink">
               Resources
               <IconContext.Provider value={{ className: "dropdown" }}>
                 <RiArrowDropDownLine />
