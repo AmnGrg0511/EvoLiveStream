@@ -5,6 +5,10 @@ import onetomanydata from '../data/onetomany/oneToManypoints.json'
 import oneToManyFeaturesdata from '../data/onetomany/oneToManyfeaturs.json'
 import OneToManyFeatures from './oneToManyFeatures';
 import Analysisdata from './../data/onetomany/analysis.json'
+import Browsemorewayscontent from './../data/onetomany/browsemany.json';
+import Browsemoreways from './browsemoreways';
+import {GoPrimitiveDot} from 'react-icons/go'
+import { IconContext } from 'react-icons';
 function oneToMany(){
     return(
         <>
@@ -123,6 +127,26 @@ function oneToMany(){
                         </span>
                     </p>
                 </div> 
+            </div>
+            <div className="Browsemoreways-main">
+                <div className="Browsemoreways-sub">
+                    <h1 className="Browsemoreways-heading">Browse more ways to use Swirls</h1>
+                    <div className="Browsemoreways-card-main">
+                        {
+                            Browsemorewayscontent.map(element=>{
+                                return <Browsemoreways content={element.content} imgurl={element.imgurl} buttoncontent={element.buttoncontent}/>
+                            })
+                        }
+                    </div>
+                    <div className="dots">
+                        <IconContext.Provider value={{className:"dot"}}>
+                            <GoPrimitiveDot />
+                        </IconContext.Provider>
+                        <IconContext.Provider value={{className:"dot"}}>
+                            <GoPrimitiveDot />
+                        </IconContext.Provider>
+                    </div>
+                </div>
             </div>
         </>
     )
