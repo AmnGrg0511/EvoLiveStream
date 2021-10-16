@@ -64,20 +64,20 @@ function Navbar() {
                 <RiArrowDropDownLine />
               </IconContext.Provider>
             </Link>
-            <Link to="" className="navlink">
-              Features
+            <Link to="/oneToMany" className="navlink">
+              Products
               <IconContext.Provider value={{ className: "dropdown" }}>
                 <RiArrowDropDownLine />
               </IconContext.Provider>
             </Link>
-            <Link to="/oneToMany" className="navlink">
-              Resources
+            <Link to="" className="navlink">
+              Newsroom
               <IconContext.Provider value={{ className: "dropdown" }}>
                 <RiArrowDropDownLine />
               </IconContext.Provider>
             </Link>
             <Link to="/startup" className="navlink">
-              Watch
+              Evo Startups
             </Link>
             <Link to="/pricing" className="navlink">
               Pricing
