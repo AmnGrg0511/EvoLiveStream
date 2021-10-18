@@ -19,7 +19,10 @@ body {
 }
 
 .logo {
-    margin-right: 15px;
+    margin-right: 10px;
+    width: 5%;
+    margin-left: 15px;
+    display: flex;
 }
 
 .nav-cmain {
@@ -30,7 +33,7 @@ body {
 
 .nav-c {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -51,9 +54,10 @@ body {
 }
 
 .image {
-    width: 45px;
-    height: 45px;
-    margin-left: 50px;
+    height: auto;
+    max-width: 100%;
+    align-self: center;
+    margin-top: 8px;
 }
 
 .nav-c2 {

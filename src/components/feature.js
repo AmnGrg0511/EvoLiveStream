@@ -1,3 +1,4 @@
+import './../styles/features.css' 
 const styles = {
   container: {
     margin: 100,
@@ -34,9 +35,9 @@ export const Feature = ({ media, heading, sub, points, btnText, index }) => {
         flexDirection: index % 2 ? "row-reverse" : "row",
       }}
     >
-      <div style={styles.media}>
+      <div style={styles.media} className="feature-video-div">
         {media?.type === "video" ? (
-          <video height={500} src={media.url} autoPlay loop muted />
+          <video height={500} src={media.url} autoPlay loop muted className="feature-video"/>
         ) : (
           <img height={500} src={media.url} alt="" />
         )}
