@@ -1,0 +1,26 @@
+[
+	{
+		"imgurl": "./images/free.png",
+		"heading": "FREE",
+		"button": "SIGN UP",
+		"price": 0
+	},
+	{
+		"imgurl": "./images/teamwork.png",
+		"heading": "TEAM",
+		"button": "BUY NOW",
+		"price": 10
+	},
+	{
+		"imgurl": "./images/profit.png",
+		"heading": "BUSSINESS",
+		"button": "BUY NOW",
+		"price": 20
+	},
+	{
+		"imgurl": "./images/enterprise.png",
+		"heading": "ENTERPRISE",
+		"button": "CONTACT SALES",
+		"price": 35
+	}
+]
