@@ -1,6 +1,5 @@
 import './../styles/problemsolution.css'
 import Problemsolutionsub from './problemsolutionsub';
-import { useState } from 'react';
 function Problemsolution(props){
     const rendericons=()=>{
         let count=0;
@@ -9,14 +8,14 @@ function Problemsolution(props){
             if(props.counter==1)
             {
                 if(count<=3)
-                    return <Problemsolutionsub heading={element.heading} imgurl={element.imgurl}/>
+                    return <Problemsolutionsub heading={element.heading} imgurl={element.imgurl} cname="business-sub-img"/>
                 else
                     return
             }
             else
             {
                 if(count>3)
-                    return <Problemsolutionsub heading={element.heading} imgurl={element.imgurl}/>
+                    return <Problemsolutionsub heading={element.heading} imgurl={element.imgurl} cname="business-sub-img"/>
                 else
                     return
             }
@@ -26,7 +25,7 @@ function Problemsolution(props){
     return(
         <>
             <div className={props.display}>
-                <div className="business-problem-sub">
+                <div className={props.cname}>
                     <img src={props.imgurl} className="business-problem-img"></img>
                 </div>
                 <div className="business-problem-content">

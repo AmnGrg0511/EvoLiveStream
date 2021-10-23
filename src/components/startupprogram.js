@@ -15,9 +15,9 @@ function Startupprogram(){
         return business.map(element=>{
             count++;
             if(count==1)
-            return <Problemsolution heading={element.heading} contentone={element.contentone} contenttwo={element.contenttwo} businessimg={businessimg} counter="1" display="Business-problem" imgurl="./images/business-problem.png"/>
+            return <Problemsolution heading={element.heading} contentone={element.contentone} contenttwo={element.contenttwo} businessimg={businessimg} counter="1" display="Business-problem" imgurl="./images/business-problem.png" cname="business-problem-sub"/>
             else
-            return <Problemsolution heading={element.heading} contentone={element.contentone} contenttwo={element.contenttwo} businessimg={businessimg} counter="2" display="Business-problem-reverse" imgurl="./images/problem.png"/>
+            return <Problemsolution heading={element.heading} contentone={element.contentone} contenttwo={element.contenttwo} businessimg={businessimg} counter="2" display="Business-problem-reverse" imgurl="./images/problem.png" cname='business-problem-sub-two'/>
         })
     }
     const renderhowit=()=>{
@@ -25,9 +25,9 @@ function Startupprogram(){
         return howitwillhelpdata.map(element=>{
             count++;
             if(count==1)
-                return <Whocanapply heading={element.heading} content={element.content} imgurl={element.imgurl} reverse="Who-can-apply-main" reversetwo="who-can-apply-content"/>
+                return <Whocanapply heading={element.heading} content={element.content} imgurl={element.imgurl} reverse="Who-can-apply-main" reversetwo="Who-can-apply-content"/>
             else
-                return <Whocanapply heading={element.heading} content={element.content} imgurl={element.imgurl} reverse="Who-can-apply-main-two" reversetwo="who-can-apply-content-two"/>
+                return <Whocanapply heading={element.heading} content={element.content} imgurl={element.imgurl} reverse="Who-can-apply-main-two" reversetwo="Who-can-apply-content-two"/>
         })
     }
     return(
@@ -71,7 +71,7 @@ function Startupprogram(){
                     <div className="Features-icons">
                         {
                             featuresicon.map(element=>{
-                                return  <Problemsolutionsub imgurl={element.imgurl} heading={element.heading} />
+                                return  <Problemsolutionsub imgurl={element.imgurl} heading={element.heading} cname="business-sub-img-two"/>
                             })
                         }
                     </div>

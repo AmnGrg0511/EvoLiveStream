@@ -248,15 +248,43 @@ function OneToMany() {
                 );
               })}
             </div>
-          </div>
-          <div className="dots">
-            <IconContext.Provider value={{ className: "dot" }}>
-              <GoPrimitiveDot onClick={()=>setIndex(0)} />
-            </IconContext.Provider>
+            <div className="Requestdemo-main">
+                <div className="Requestdemo-sub">
+                    <h3 class="Requestdemo-heading">Join the league of 100+ brands using Swirl</h3>
+                    <button className="Requestdemo-button">REQUEST DEMO</button>
+                    <p style={{textAlign:"center",lineHeight:1.6}}>
+                        <span style={{fontWeight: 400,color:"white",textAlign:"center",fontSize:"18px"}}>Available for all eCommerce platforms. </span>
+                        <span style={{fontWeight: 400,color:"white",textAlign:"center",fontSize:"18px"}}><br /></span>
+                        <span style={{fontWeight: 400,color:"white",textAlign:"center",fontSize:"18px"}}>Using Shopify? <span style={{color: "#8364d1",fontSize:"18px"}}><a style={{color: "#F37381",fontSize:"18px",textDecoration:"none"}} href="https://www.goswirl.live/" target="_blank" rel="noopener">Know more here.</a>
+                        </span>
+                        </span>
+                    </p>
+                </div> 
+            </div>
+            <div className="Browsemoreways-main">
+                <div className="Browsemoreways-sub">
+                    <h1 className="Browsemoreways-heading">Browse more ways to use Swirls</h1>
+                    <div className="Browsemoreways-card-main">
+                        {
+                            Browsemorewayscontent.map(element=>{
+                                return <Browsemoreways content={element.content} imgurl={element.imgurl} buttoncontent={element.buttoncontent}/>
+                            })
+                        }
+                    </div>
+                    <div className="dots">
+                        <IconContext.Provider value={{className:"dot"}}>
+                            <GoPrimitiveDot />
+                        </IconContext.Provider>
+                        <IconContext.Provider value={{className:"dot"}}>
+                            <GoPrimitiveDot />
+                        </IconContext.Provider>
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>
     </>
-  );
+  )
 }
 export default OneToMany;
