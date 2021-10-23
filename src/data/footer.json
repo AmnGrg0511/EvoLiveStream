@@ -1,23 +1,14 @@
 [
   {
-    "heading": "Top Products",
-    "links": [
-      "Managed Website",
-      "Manage Reputation",
-      "Power Tools",
-      "Marketing Service"
-    ]
-  },
-  {
     "heading": "Quick Links",
-    "links": ["Jobs", "Brand Assets", "Investor Relations", "Terms of Service"]
+    "links": ["Customers", "Evo Start-ups", "Newsroom", "Pricing"]
   },
   {
-    "heading": "Features",
-    "links": ["Jobs", "Brand Assets", "Investor Relations", "Terms of Service"]
+    "heading": "Products",
+    "links": ["One-to-many", "One-to-one"]
   },
   {
-    "heading": "Resources",
-    "links": ["Guides", "Research", "Experts", "Agencies"]
+    "heading": "Policy",
+    "links": ["Terms and Conditions"]
   }
 ]
